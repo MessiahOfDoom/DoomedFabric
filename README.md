@@ -1,9 +1,3 @@
-# Fabric Example Mod
+# DoomedFabric
 
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+A place to collect all my horrible "library" ideas and even worse implementations. ~~Truth~~ Jokes aside, this is going to be a collection of Codesnippets that take some of the tedium out of Modding. It also contains temporary solutions to problems that exist when new versions come out, such as the changes to Biomes in 1.16.2 that completely broke oregen for a while (not sure if it's still broken, I'm just too lazy to update the description everytime some minor updates happen)

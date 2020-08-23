@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "de.schneider_oliver.doomedfabric.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+	"BiomeMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,12 +1,13 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.fabricmc.example.mixin",
+  "package": "de.schneider_oliver.doomedfabric.mixin",
+  "plugin": "de.schneider_oliver.doomedfabric.config.module.RecipeUnlockerConfig",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+	"RecipeUnlockerMixin"
   ],
   "client": [
-    "ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1

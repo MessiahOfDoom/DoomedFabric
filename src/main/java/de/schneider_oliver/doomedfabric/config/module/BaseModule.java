@@ -17,6 +17,7 @@ import de.schneider_oliver.doomedfabric.config.values.ConfigValue;
 public abstract class BaseModule implements IMixinConfigPlugin{
 
 	public abstract String getModuleName();
+	public abstract String getModuleDirName();
 	public List<ConfigValue> values = new ArrayList<>();
 	
 	
@@ -39,7 +40,7 @@ public abstract class BaseModule implements IMixinConfigPlugin{
 
 	@Override
 	public void onLoad(String mixinPackage) {
-		Config.tryReadFirst();
+		Config.getCachedModuleByName(getModuleName());
 	}
 
 	@Override
@@ -56,4 +57,7 @@ public abstract class BaseModule implements IMixinConfigPlugin{
 
 	@Override
 	public void postApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {}
+	
+	@Override
+	public boolean shouldApplyMixin(String targetClassName, String mixinClassName) { return true; }
 }

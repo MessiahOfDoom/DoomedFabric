@@ -12,6 +12,6 @@ public class DoomedFabric implements ModInitializer {
 	
 	@Override
 	public void onInitialize() {
-		Config.tryReadFirst();
+		Config.cacheConfigsOnStartup();
 	}
 }

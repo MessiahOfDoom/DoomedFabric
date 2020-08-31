@@ -4,7 +4,8 @@
   "package": "de.schneider_oliver.doomedfabric.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-	"BiomeMixin"
+	"BiomeMixin",
+	"ItemMixin"
   ],
   "client": [
   ],

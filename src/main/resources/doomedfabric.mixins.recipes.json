@@ -2,7 +2,7 @@
   "required": true,
   "minVersion": "0.8",
   "package": "de.schneider_oliver.doomedfabric.mixin",
-  "plugin": "de.schneider_oliver.doomedfabric.config.module.RecipeUnlockerConfig",
+  "plugin": "de.schneider_oliver.doomedfabric.config.module.RecipeUnlockerModule",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
 	"RecipeUnlockerMixin"

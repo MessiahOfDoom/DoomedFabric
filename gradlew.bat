@@ -1,3 +1,13 @@
+@rem ***************************************************************************
+@rem Copyright (c) 2020 Oliver Schneider
+@rem
+@rem This program and the accompanying materials
+@rem are made available under the terms of the GNU General Public License version 3 (GPLv3)
+@rem which accompanies this distribution, and is available at
+@rem https://www.gnu.org/licenses/gpl-3.0-standalone.html
+@rem
+@rem SPDX-License-Identifier: GPL-3.0-only
+@rem ***************************************************************************
 @rem
 @rem Copyright 2015 the original author or authors.
 @rem

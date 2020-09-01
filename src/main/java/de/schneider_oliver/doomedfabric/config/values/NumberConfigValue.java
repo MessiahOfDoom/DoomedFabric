@@ -1,3 +1,13 @@
+/*******************************************************************************
+ * Copyright (c) 2020 Oliver Schneider
+ *
+ * This program and the accompanying materials
+ * are made available under the terms of the GNU General Public License version 3 (GPLv3)
+ * which accompanies this distribution, and is available at
+ * https://www.gnu.org/licenses/gpl-3.0-standalone.html
+ *
+ * SPDX-License-Identifier: GPL-3.0-only
+ *******************************************************************************/
 package de.schneider_oliver.doomedfabric.config.values;
 
 public class NumberConfigValue extends ConfigValue<Number>{
@@ -28,9 +38,9 @@ public class NumberConfigValue extends ConfigValue<Number>{
 	public String getDefaultValue() {
 		switch(numType) {
 		case INT:
-			return String.format("%d", defaultValue);
+			return String.format("%d", (int)defaultValue);
 		case FLOAT:
-			return String.format("%1.2f", defaultValue);
+			return String.format("%1.2f", (float)defaultValue);
 		case DOUBLE:
 			return String.format("%1.3f", defaultValue);
 		}

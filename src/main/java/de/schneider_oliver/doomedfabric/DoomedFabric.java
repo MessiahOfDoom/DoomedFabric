@@ -10,18 +10,26 @@
  *******************************************************************************/
 package de.schneider_oliver.doomedfabric;
 
+import java.io.File;
+import java.nio.file.Paths;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import de.schneider_oliver.doomedfabric.config.Config;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
 
 public class DoomedFabric implements ModInitializer {
 	
 	public static final Logger LOGGER = LogManager.getLogger("DoomedFabric");
+	public static File CacheDir;
+	
 	
 	@Override
 	public void onInitialize() {
 		Config.cacheConfigsOnStartup();
+		CacheDir = Paths.get(FabricLoader.getInstance().getGameDir().toString(), "doomedfabric").toFile();
+		CacheDir.mkdirs();
 	}
 }

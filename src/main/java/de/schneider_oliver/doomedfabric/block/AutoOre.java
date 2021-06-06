@@ -15,6 +15,7 @@ import java.util.function.Predicate;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.structure.rule.RuleTest;
+import net.minecraft.util.Identifier;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.decorator.ConfiguredDecorator;
 
@@ -36,6 +37,8 @@ public interface AutoOre {
 	
 	public Predicate<Biome> getBiomePredicate();
 	
+	
+	public Identifier getIdentifier();
 	
 	public default boolean hasExtraDecorators() {
 		return false;

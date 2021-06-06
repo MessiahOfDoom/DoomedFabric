@@ -15,6 +15,7 @@ import java.util.function.Predicate;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.structure.rule.RuleTest;
+import net.minecraft.util.Identifier;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biome.Category;
 import net.minecraft.world.gen.feature.OreFeatureConfig.Rules;
@@ -27,9 +28,11 @@ public class AutoOreBlock extends Block implements AutoOre{
 	private Predicate<Biome> predicate = (b) -> {
 		return b.getCategory() != Category.THEEND && b.getCategory() != Category.NETHER;
 	};
+	private Identifier id;
 	
-	public AutoOreBlock(Settings settings) {
+	public AutoOreBlock(Settings settings, Identifier id) {
 		super(settings);
+		this.id = id;
 	}
 
 	@Override
@@ -105,6 +108,11 @@ public class AutoOreBlock extends Block implements AutoOre{
 	public AutoOreBlock biomePredicate(Predicate<Biome> predicate) {
 		this.predicate = predicate;
 		return this;
+	}
+
+	@Override
+	public Identifier getIdentifier() {
+		return id;
 	}
 	
 }
